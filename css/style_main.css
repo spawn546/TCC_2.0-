@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap');
+
+:root {
+	font-size: 16px;
+	font-family: 'Karantina', cursive, sans-serif;
+	--text-primary: white;
+	--text-secondary: #101823;
+	--bg-nav: #2c2f33;
+	--bg-navnight: #23272a;
+	--bg-aside:#730000;
+	--bg-main:#730000;
+	--bg-bodynormal:#23272a;
+	--bg-bodynight:black;
+
+
+}
+
+body::-webkit-scrollbar{
+	width: 1rem;
+}
+
+body::-webkit-scrollbar-track{
+	background: #99aab5;
+}
+body::-webkit-scrollbar-thumb{
+	background:#23272a;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+
+*{
+	margin: 0;
+	padding:0;
+	text-decoration: none;
+	
+
+
+}
+
+html,body{
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+#videoBG{
+	position: fixed;
+	z-index: -1;
+	
+}
+@media (min-aspect-ratio: 16/9){
+	#videoBG{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	#videoBG{
+		width: auto;
+		height: 100%;
+	}
+}
+
+#container{
+	width: 100%;
+	height: 100vh;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+
+}
+/* USUARIO INICIO */
+#usuario_info{
+	padding: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;	
+	background-color: var(--bg-bodynormal);
+	opacity: 0.9;
+	width: 20%;
+	color: white;
+	font-weight: 200px;
+	text-decoration: none;
+	height: 100%;
+}
+#usuario_info a {
+	color: white;
+}
+
+#usuario_info a:hover {
+	color: orange;
+	transition: 0.5s ease;
+}
+
+#usuario_info img{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+}
+
+/* USUARIO FIM */
+
+/* Inventario / anotacao INICIO */
+
+#Anotacao_inventario_div{
+
+	background-color: var(--bg-bodynormal);
+	margin:30px;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+	opacity: 0.9;
+}
+
+#anotacao{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	padding: 5px;
+	height: 40%;
+	padding: 10px;
+	
+}
+
+#text_div{
+	font-size: 2rem;
+	font-weight: 100;
+	letter-spacing: 3px;
+	overflow: scroll;
+	padding: 10px;
+	border:1px solid black;
+	background-color: white;
+	color: black;
+	width: 95%;
+	height: 400px;
+}
+
+#text_div h3{
+	font-size: 2rem;
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+.button_text{
+	margin-left: 10px;
+	width: 150px;
+	height: 32px;
+	border:none;
+	background-color: orange;
+	color: black;
+	font-size: 1rem;
+	border-radius: 2px;
+}
+.button_text:hover{
+	transition: 0.5s ease;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.anotacao_text{
+	margin-top: 5px;
+	width: 300px;
+	height: 30px;
+	border:1px solid white;
+	color: white;
+	background-color: transparent;
+}
+#anotacao .titulo_anot{
+	color:white;
+	letter-spacing: 3px;
+	font-weight: 200;
+
+}
+#inventario_enviar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+}
+.inventario_enviar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	color: white;	
+}
+
+.inventario_enviar input{
+	color: white;
+	width: 200px;
+	margin-bottom: 10px;
+	height: 30px;
+	background-color: transparent;
+	border:1px solid white;
+	border-radius: 2px;
+
+}
+
+.inventario_enviar button{
+	border:none;
+	background-color: orange;
+	color: white;
+	width: 100px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.inventario_enviar button:hover{
+	cursor: pointer;
+	color: white;
+	background-color: black;
+	transition: 0.5s ease;
+
+}
+
+.inventario_enviar a span {
+	font-size: 1.5rem;
+	color: orange;
+	font-weight: 200;
+	letter-spacing: 3px;
+	
+}
+/* Inventario// Anotacao FIM */
+
+
+/* CALCULOS INICIO */
+#calculos{
+	width: 20%;
+	background-color: var(--bg-bodynormal);
+	opacity: 0.9;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding: 2px;
+
+}
+#calculos img {
+	width:100%;
+	height: auto;
+	object-fit: contain;
+
+
+}
+#dados{
+	padding: 10px;
+	margin-top: 20px;
+}
+
+#Dados h3{
+ color: white;
+ letter-spacing: 3px;
+ font-weight: 100;
+}
+.dados{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: black;
+}
+
+.list_dados{
+	width: 90%;
+	height: 20px;
+	margin:0 10px;
+}
+
+.button_dados{
+	width: 20%;
+	height: 30px;
+	border:none;
+	margin-top: 10px;
+	margin-left: 5px;
+	color: white;
+	background-color: #871908;
+}
+
+.button_dados:hover{
+	transition: 0.5s ease;
+	cursor: pointer;
+	background-color: black;
+}
+
+
+.resultado_dados{
+
+	width: 70%;
+	height: 20px;
+
+}
+
+/* CALCULOS FIM */
+
+/* Inventario INICIO */
+#inventario{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: auto;
+}
+#inventario .titulo_anot{
+	color:white;
+	letter-spacing: 3px;
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
+#table_inventario{
+	width: 100%;
+	height: auto;
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 100;
+	letter-spacing: 3px;
+	text-align: center;
+	padding: 2px;
+
+}
+
+#table_inventario td{
+	color: white;
+	border:1px solid white;
+	padding: 2px;
+}
+
+/* Inventario FIM */
