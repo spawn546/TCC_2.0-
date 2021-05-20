@@ -78,7 +78,7 @@
 	</div>	
 
 		<aside id="calculos">
-			<img src="img/d20icon.png">
+		
 			<div id="Dados">
 				<h3>Rolagem de dados</h3>
 				<form class="Dados" method="post" action="rolagem.php">
