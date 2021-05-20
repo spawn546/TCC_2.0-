@@ -18,13 +18,13 @@
 				ESCUDO DO MESTRE 
 			</span>
 
-			<a href="index.html" id="navlink">
+			<a href="index.php" id="navlink">
 			<span id="navitem">
 				Home 
 			</span>
 			</a>
 			
-			<a href="login.html" id="navlink">
+			<a href="login.php" id="navlink">
 			<span id="navitem">
 				Login
 			</span>

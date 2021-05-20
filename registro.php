@@ -18,13 +18,13 @@
 				ESCUDO DO MESTRE 
 			</span>
 
-			<a href="index.html" id="navlink">
+			<a href="index.php" id="navlink">
 			<span id="navitem">
 				Home 
 			</span>
 			</a>
 			
-			<a href="login.html" id="navlink">
+			<a href="login.php" id="navlink">
 			<span id="navitem">
 				Login
 			</span>
@@ -38,9 +38,10 @@
 	<div id="login_container">
 		<h3 class="registro_title">Criar Conta</h3>
 		<div id="form_group_login">
-		<form class="form_group_login">
-			<input class="text_area" type="text" name="usuario_registro" placeholder="Digite o nome de usuário">
-			<input class="text_area" type="password" name="senha_registro" placeholder="Digite a senha">
+		<form class="form_group_login" method="post" action="recebe.php">
+			<input name="email" class="text_area" type="text" name="usuario_registro" placeholder="Digite o seu e-mail">
+			<input name="usoario" class="text_area" type="text" name="usuario_registro" placeholder="Digite o seu nome de usoario">
+			<input name="senha" class="text_area" type="password" name="senha_registro" placeholder="Digite a senha">
 			<button class="button_login" type="submit">Registrar</button>
 			
 		</form>

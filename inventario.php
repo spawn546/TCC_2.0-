@@ -1,26 +1,22 @@
-<?php session_start(); ?>
-
 <?php
+	require_once("validador_acesso.php");
 
-$chamados = array();
+	$chamados = array();
 
 
 
-$arquivo = fopen('mensagens.hd','r');
-// enquanto houver registros ( linhas ) a serem recuperados
-while(!feof($arquivo)) { // teste pelo fim de um arquivo
-  //linhas
- $registro = fgets($arquivo);
- $chamados[] = $registro;
-}
-//fechar o arquivo aberto
-fclose($arquivo);
-//...
-
+	$arquivo = fopen('mensagens.hd','r');
+	// enquanto houver registros ( linhas ) a serem recuperados
+	while(!feof($arquivo)) { // teste pelo fim de um arquivo
+	  //linhas
+	 $registro = fgets($arquivo);
+	 $chamados[] = $registro;
+	}
+	//fechar o arquivo aberto
+	fclose($arquivo);
+	//...
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -41,9 +37,9 @@ fclose($arquivo);
 
 		<aside id="usuario_info">
 			<img src="img/usuario_img.jpg">
-			<h3>Nome Usuário</h3>
-			<a href="inventário.html">Inserir Item</a>
-			<a href="index.html">Sair</a>
+			<h3><?= $_SESSION['nome'] ?></h3>
+			<a href="">Inserir Item</a>
+			<a href="">Sair</a>
 
 
 
@@ -67,22 +63,17 @@ fclose($arquivo);
 
 		</div>
 
-		<div id="inventario">
-			<h3 class="titulo_anot">Inventário</h3>
-			<table id="table_inventario">
-			<tr>
-
-			<th>Nome</th>
-			<th>Tipo</th>
-			<th>Dano</th>
-
-			</tr>
-			<tr>
-				<td>Nome Do Item</td>
-				<td>Tipo Do Item</td>
-				<td>Dano Do Item</td>
-			</tr>
-			</table>
+		<div id="inventario_enviar">
+			<form class="inventario_enviar" method="post" action="registra_item.php">
+				<label for="nome_item">Nome Do item</label>
+				<input type="textarea" name="nome_item">
+				<label for="tipo_item">Tipo Do item</label>
+				<input type="textarea" name="tipo_item">
+				<label for="dano_item">Dano Do item</label>
+				<input type="textarea" name="dano_item">
+				<button type="submit">Salvar</button>
+				<a href="main_page.php"><span>SAIR</span></a>
+			</form>
 		</div>
 	</div>	
 
@@ -90,8 +81,8 @@ fclose($arquivo);
 			<img src="img/d20icon.png">
 			<div id="Dados">
 				<h3>Rolagem de dados</h3>
-				<form class="Dados">
-					<input list="dados" class="list_dados">
+				<form class="Dados" method="post" action="rolagem.php">
+					<input name="dado" list="dados" class="list_dados">
 					  <datalist id="dados">
 					    <option value="D6">
 					    <option value="D10">
@@ -100,7 +91,7 @@ fclose($arquivo);
 					    <option value="D100">
 					  </datalist>
 					<button class="button_dados">Calcular</button>
-					<input type="text" name="resultado" class="resultado_dados" readonly>
+					<input type="text" class="resultado_dados" readonly value="<?= $_SESSION['dado'] ?>">
 				</form>
 			</div>
 		</aside>
