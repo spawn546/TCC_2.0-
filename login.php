@@ -6,14 +6,13 @@
 	<title></title>
 </head>
 <body>
+	<video id="videoBG" autoplay muted loop>
+		<source src="img/bg_index.mp4" type="video/mp4">
+	</video>
+	
 	<header>
 		<nav>
-			<a href="#" id="navlink">
-			<span id="logo">
-				<img src="img/icon.png">
-			</span>
-			</a>
-
+			
 			<span id="logo">
 				ESCUDO DO MESTRE 
 			</span>

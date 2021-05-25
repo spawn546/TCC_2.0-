@@ -31,11 +31,7 @@
 		<source src="img/bg-mp4.mp4" type="video/mp4">
 	</video>
 
-
-	<div id="container">
-			
-
-		<aside id="usuario_info">
+	<header id="usuario_info">
 			<img src="img/usuario_img.jpg">
 			<h3><?= $_SESSION['nome'] ?></h3>
 			<a href="">Inserir Item</a>
@@ -43,7 +39,13 @@
 
 
 
-		</aside>
+	</header>
+
+
+	<div id="container">
+			
+
+	
 	<div id="Anotacao_inventario_div">
 
 			<div id="anotacao">

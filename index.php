@@ -6,13 +6,12 @@
 	<title></title>
 </head>
 <body>
+	<video id="videoBG" autoplay muted loop>
+		<source src="img/bg_index.mp4" type="video/mp4">
+	</video>
 	<header>
 		<nav>
-			<a href="#" id="navlink">
-			<span id="logo">
-				<img src="img/icon.png">
-			</span>
-			</a>
+		
 
 			<span id="logo">
 				ESCUDO DO MESTRE 
@@ -45,9 +44,9 @@
 
 
 			<div class="content_class">
-				<h1>BEM VINDO</h1>
+				<h1 style="font-weight: 200;">BEM VINDO</h1>
 				<hr/>
-				<h3>
+				<h3 style="font-weight: 200;">
 					Escudo Do Mestre, sua interface Front-End para jogar RPG de mesa com estilo ! 
 				</h3>
 
@@ -81,8 +80,13 @@
 		
 	</div>
 
-	<footer id="footer">
+	<footer id="footer" style="color: white;">
 		
+		<h3>Web Master : Bruno Moraes  | </h3>
+		<h3>Developed by : Horizon Team | </h3>
+
+
+
 	</footer>
 
 

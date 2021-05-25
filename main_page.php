@@ -46,18 +46,17 @@
 	</video>
 
 
-	<div id="container">
-			
-
-		<aside id="usuario_info">
+	<header id="usuario_info">
 			<img src="img/usuario_img.jpg">
 			<h3><?= $_SESSION['nome'] ?></h3>
 			<a href="inventario.php">Inserir Item</a>
 			<a href="logoff.php">Sair</a>
+	</header>
 
 
+	<div id="container">
+			
 
-		</aside>
 	<div id="Anotacao_inventario_div">
 
 			<div id="anotacao">
@@ -76,14 +75,18 @@
 			</form>
 
 		</div>
-		<div id="inventario">
 			<h3 class="titulo_anot">Inventário</h3>
-			<tr>
-	        	<th>Nome</th>
-	            <th>Tipo</th>
-	        	<th>Dano</th>
-	        </tr>
-    	
+			<hr/ class="hr_titulo" >
+					<table id="table_inventario">
+					<tr>
+			        	<th>Nome</th>
+			            <th>Tipo</th>
+			        	<th>Dano</th>
+			        </tr>
+		    		</table>
+		<div id="inventario">
+			
+	    	
 
 		<?php foreach ($item as $item) { ?>                
                   <?php
@@ -105,8 +108,7 @@
                                   <td><?= $item_dados[3] ?></td>
                               </tr>
                           </table>
-                      
-              <?php } ?>
+                  <?php } ?>
               </div>
 	</div>	
 

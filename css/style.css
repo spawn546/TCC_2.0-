@@ -11,12 +11,12 @@
 	--bg-main:#730000;
 	--bg-bodynormal:#23272a;
 	--bg-bodynight:black;
-
+	font-weight: 200;
 
 }
 
 body::-webkit-scrollbar{
-	width: 1rem;
+	width: 6px;
 }
 
 body::-webkit-scrollbar-track{
@@ -32,6 +32,26 @@ body{
 	align-items: center;
 }
 
+#videoBG{
+	position: fixed;
+	z-index: -1;
+	
+}
+@media (min-aspect-ratio: 16/9){
+	#videoBG{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	#videoBG{
+		width: auto;
+		height: 100%;
+	}
+}
+
+
 
 *{
 	margin: 0;
@@ -46,37 +66,37 @@ body{
 
 /*  INICIO HEADER  */
 header{
+	box-sizing: border-box;
 	width: 100%;
 	overflow: hidden;
 }
 nav{ 
-	
+	opacity: 0.8;
+	box-sizing: border-box;
 	width: 100%;
 	height: 80px;
 	padding: 10px;
-	background-color: var(--bg-nav);
+	background-color:#000;
 	display: flex;
-	
 	justify-content: space-around;
 	align-items: center;
 	overflow: hidden;
  }
 
  #navitem{
+ 	font-size: 1.2rem;
  	display:flex;
  	justify-content: space-around;
  	align-items: center;
  	width: 100px;
  	height: 25px;
- 	background-color:#99aab5;
  	border: none;
  	border-radius: 1px;
  	overflow: hidden;
 
  }
  #navitem:hover{
- 	background-color:#0b0d3d;
- 
+ 	color: orange;
  	opacity: 0.9;
  	transition: 0.5s ease;
  }
@@ -94,13 +114,10 @@ nav{
 
  }
 
-
-
  #logo img{
  	width: 80px;
  	padding: 10px;
  	height: 80px;
- 	line-height: 80px;
 
  }
 
@@ -108,8 +125,6 @@ nav{
  	color: white;
  	font-size: 2rem;
  	letter-spacing: 3px;
- 	padding: 10px;
- 	text-decoration: underline;
  }
 
  /*  FIM HEADER */
@@ -154,7 +169,6 @@ hr{
 	background-color: #0b0d3d;
 	width: 40%;
 	height: 600px;
-	
 	margin: 20px;
 }
 
@@ -184,9 +198,9 @@ hr{
 }
 
 #banner_main{
+
 	border-bottom: 3px solid white;
 	overflow: hidden;
-	
 	width: 100%;
 	margin: 0;
 	height: 300px;
@@ -208,6 +222,7 @@ hr{
 	text-align: center;
 	line-height: 300px;
 	font-size: 2rem;
+	font-weight: 200;
 	letter-spacing: 4px;
 	color: white;
 	transition: 0.5s ease;
@@ -246,12 +261,25 @@ hr{
 
 
  #footer{
+ 	opacity: 0.8;
+ 	display: flex;
+ 	flex-direction: row;
+ 	align-items: center;
+ 	justify-content: space-around;
  	margin-top: 50px;
  	width: 100%;
  	height: 80px;
- 	background-color: black;
- 	
- 	
+ 	background-color: #000;
+ }
+
+ #footer > h3 {
+ 	letter-spacing: 3px;
+ 	color: white;
+ 	margin-left: 30px;
+ 	font-weight: 200;
+ 	text-align: center;
+
+
  }
 
 
@@ -265,7 +293,8 @@ hr{
 
 
  #login_container{
- 	background-color: var(--bg-nav);
+ 	opacity: 0.8;
+ 	background-color: #000;
  	overflow: hidden;
  	width:80%;
  	margin-top:100px;
@@ -308,13 +337,13 @@ hr{
  	padding: 10px;
  	margin-bottom: 10px;
  	color: white;
- 	background-color: orange;
+ 	background-color: #0b0d3d;
  	border:none;
  	
  }
  .button_login:hover{
 
- 	background-color: black;
+ 	background-color: gray;
  	opacity: 0.9;
  	transition: 0.5s ease;
  	cursor: pointer;
@@ -340,3 +369,6 @@ hr{
  	font-size: 2rem;
  	font-weight: 200;
  }
+
+
+
