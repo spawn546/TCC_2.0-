@@ -47,7 +47,7 @@
 				<h1 style="font-weight: 200;">BEM VINDO</h1>
 				<hr/>
 				<h3 style="font-weight: 200;">
-					Escudo Do Mestre, sua interface Front-End para jogar RPG de mesa com estilo ! 
+					Seja bem-vindo(a) ao Escudo do Mestre, uma plataforma desenvolvida especialmente para mestres de RPG, visando facilitar e melhorar as suas mesas! Aqui você terá a acesso a diversas ferramentas como rolagem de dados, anotações e inventário entre outras coisas que irão auxiliar as suas aventuras.
 				</h3>
 
 			</div>	
@@ -83,7 +83,7 @@
 	<footer id="footer" style="color: white;">
 		
 		<h3>Web Master : Bruno Moraes  | </h3>
-		<h3>Developed by : Horizon Team | </h3>
+		<h3>Developed by : Bruno Moraes  | Juan Nogueira </h3>
 
 
 

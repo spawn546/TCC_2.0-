@@ -47,7 +47,7 @@
 
 
 	<header id="usuario_info">
-			<img src="img/usuario_img.jpg">
+			
 			<h3><?= $_SESSION['nome'] ?></h3>
 			<a href="inventario.php">Inserir Item</a>
 			<a href="logoff.php">Sair</a>
@@ -106,8 +106,11 @@
                                   <td><?= $item_dados[1] ?></td>
                                   <td><?= $item_dados[2] ?></td>
                                   <td><?= $item_dados[3] ?></td>
+                                  <td><button type="submit" id="remover_item">X</button></td>
+
                               </tr>
                           </table>
+                         	 
                   <?php } ?>
               </div>
 	</div>	

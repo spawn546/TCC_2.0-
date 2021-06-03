@@ -372,3 +372,34 @@ hr{
 
 
 
+@media screen and (max-width: 640px){
+
+	#container{
+		
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+	height: auto;
+	
+}
+
+#content{
+	width: 85%;
+	height: 600px;
+	background-color: #0b0d3d;
+	margin: 10px;
+	margin-top: 50px;
+}
+
+#aside{
+	background-color: #0b0d3d;
+	width: 85%;
+	height: 600px;
+	margin: 20px;
+}
+
+
+}

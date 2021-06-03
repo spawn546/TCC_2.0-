@@ -6,6 +6,9 @@
 	<title></title>
 </head>
 <body>
+	<video id="videoBG" autoplay muted loop>
+		<source src="img/bg-mp4.mp4" type="video/mp4">
+	</video>
 	<header>
 		<nav>
 			<a href="#" id="navlink">
